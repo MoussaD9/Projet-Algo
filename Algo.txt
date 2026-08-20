@@ -1,0 +1,43 @@
+Algorithme Iteratif_While
+
+Var
+    caractere : CHAR
+    longueur, mots, voyelles : Integer
+
+Begin
+
+    longueur ← 0
+    mots ← 0
+    voyelles ← 0
+
+    Écrire "never give up bro."
+    Lire caractere
+
+    while caractere ≠ '.' Do
+
+        longueur ← longueur + 1
+
+        Si caractere = 'a' ou caractere = 'e' ou
+           caractere = 'i' ou caractere = 'o' ou
+           caractere = 'u' ou caractere = 'y' Then
+
+            voyelles ← voyelles + 1
+
+        EndIF
+
+        IF caractere = ' ' Then
+            mots ← mots + 1
+        EndIF
+
+        Lire caractere
+
+    End_While
+
+    longueur ← longueur + 1
+    mots ← mots + 1
+
+    write "23 : ", longueur
+    write "4 : ", mots
+    write "9 : ", voyelles
+
+End
