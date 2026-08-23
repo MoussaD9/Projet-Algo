@@ -1,8 +1,8 @@
 Algorithme Iteratif_While
 
 Var
-    caractere : CHAR
-    longueur, mots, voyelles : Integer
+    car : caractere
+    longueur, mots, voyelles : entier
 
 Begin
 
@@ -11,33 +11,35 @@ Begin
     voyelles ← 0
 
     Écrire "never give up bro."
-    Lire caractere
+    Lire car
 
-    while caractere ≠ '.' Do
+    while (car!=".") faire
 
         longueur ← longueur + 1
 
-        Si caractere = 'a' ou caractere = 'e' ou
-           caractere = 'i' ou caractere = 'o' ou
-           caractere = 'u' ou caractere = 'y' Then
+        Si car = 'a' ou car = 'e' ou
+           car = 'i' ou car = 'o' ou
+           car = 'u'  car = 'A' ou car = 'E' ou
+           car = 'I' ou car = 'O' ou
+           car = 'U'  Then
 
             voyelles ← voyelles + 1
 
         EndIF
 
-        IF caractere = ' ' Then
+        IF car = ' ' Then
             mots ← mots + 1
         EndIF
 
-        Lire caractere
+        Lire car
 
     End_While
 
     longueur ← longueur + 1
     mots ← mots + 1
 
-    write "23 : ", longueur
-    write "4 : ", mots
-    write "9 : ", voyelles
+    write "La longeur de la phrase est : ", longueur
+    write "Le nombre de mots est : ", mots
+    write "Le nombre de voyelles est : ", voyelles
 
 End
