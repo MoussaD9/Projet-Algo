@@ -1,4 +1,4 @@
-Algorithme Iteratif_While
+Algorithme: Iteratif_While
 
 Var
     car : caractere
@@ -21,13 +21,13 @@ Begin
            car = 'i' ou car = 'o' ou
            car = 'u'  car = 'A' ou car = 'E' ou
            car = 'I' ou car = 'O' ou
-           car = 'U'  Then
+           car = 'U' Alors
 
             voyelles ← voyelles + 1
 
         EndIF
 
-        IF car = ' ' Then
+        IF car = ' ' Alors
             mots ← mots + 1
         EndIF
 
